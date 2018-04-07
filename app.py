@@ -2,7 +2,7 @@ import os
 from flask import Flask
 from flask_restful import Api
 from flask_sqlalchemy import SQLAlchemy
-from bucketlist.config import app_config
+from flask_rest.config import app_config
 
 # modified from
 # https://scotch.io/tutorials/build-a-restful-api-with-flask-the-tdd-way
@@ -21,10 +21,10 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 api = Api(app)
 
-from bucketlist.models import Bucketlist
-from bucketlist.models import Todo
-from bucketlist.routes.bucketlists import BucketlistsAPI, BucketlistAPI
-from bucketlist.routes.todos import TodosAPI, TodoAPI
+from flask_rest.models import Bucketlist
+from flask_rest.models import Todo
+from flask_rest.routes.bucketlists import BucketlistsAPI, BucketlistAPI
+from flask_rest.routes.todos import TodosAPI, TodoAPI
 
 with app.app_context():
     db.create_all()

@@ -3,8 +3,8 @@
 import os
 from flask_script import Manager  # class for handling a set of commands
 from flask_migrate import Migrate, MigrateCommand
-from bucketlist.app import db, create_app
-from bucketlist.app import models
+from flask_rest.app import db, create_app
+from flask_rest.app import models
 
 app = create_app(config_name=os.getenv('APP_SETTINGS'))
 migrate = Migrate(app, db)

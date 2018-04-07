@@ -1,4 +1,4 @@
 {
-  "test/test_bucketlists.py": true,
-  "test/test_todos.py": true
+  "test/test_bucketlists.py::TestApp": true,
+  "test/test_todos.py::TestApp": true
 }

@@ -4,7 +4,7 @@ from flask import Flask
 from flask_restful import Api
 import json
 from flask_sqlalchemy import SQLAlchemy
-from bucketlist.app import app, db
+from flask_rest.app import app, db
 
 
 class TestApp:

@@ -1,5 +1,5 @@
 from flask_script import Manager
-from bucketlist.app import app
+from flask_rest.app import app
 
 manager = Manager(app)
 

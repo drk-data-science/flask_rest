@@ -1,7 +1,7 @@
 import json
 from flask import jsonify, request, abort
 from flask_restful import Resource
-from bucketlist.models import Bucketlist
+from flask_rest.models import Bucketlist
 
 
 class BucketlistsAPI(Resource):

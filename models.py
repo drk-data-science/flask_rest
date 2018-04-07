@@ -1,6 +1,6 @@
 # app/models.py
 
-from bucketlist.app import db
+from flask_rest.app import db
 
 
 class Bucketlist(db.Model):
@@ -33,6 +33,7 @@ class Bucketlist(db.Model):
 
     def __repr__(self):
         return "<Bucketlist: {}>".format(self.name)
+
 
 class Todo(db.Model):
     """This class represents the todo table."""
